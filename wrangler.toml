@@ -1,0 +1,11 @@
+# lovehome-free 构建配置（Worker 版官方自动更新链路用）。
+# 注意：变量 u 等密钥只在 Dashboard 维护，绝不进仓库；
+# 部署命令（Dashboard 构建设置）为 npx wrangler deploy --keep-vars，保证不覆盖它们。
+
+name = "lovehome-free"
+main = "_worker.js"
+compatibility_date = "2026-01-20"
+
+[[kv_namespaces]]
+binding = "C"
+id = "680be131c4a44723857be70efe67d224"
